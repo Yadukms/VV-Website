@@ -91,18 +91,34 @@ body {
     padding: 40px 16px;
   }
 
-  .services-title {
-    font-size: 26px;
-    line-height: 30px;
-  }
-
-  .service-content {
-    left: 24px;
-    bottom: 24px;
-  }
-
   .service-card--large,
   .service-card--small {
     width: 92vw;
+    height: 360px;
+  }
+
+  .service-content {
+    left: 16px;
+    bottom: 16px;
+    max-width: 90%;
+  }
+
+  .service-content h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .service-content p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .service-btn {
+    top: 16px;
+    right: 16px;
+    width: 160px;
+    height: 44px;
+    font-size: 12px;
   }
 }
+
