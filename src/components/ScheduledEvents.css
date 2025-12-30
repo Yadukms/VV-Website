@@ -1,0 +1,113 @@
+/* ===============================
+   SECTION WRAPPER
+================================ */
+.scheduled {
+  padding: 50px 260px 100px;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+/* ===============================
+     TITLE
+  ================================ */
+.scheduled-title {
+  font-family: 'Michroma';
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: -1px;
+
+  background: linear-gradient(91deg, #fff -14.74%, #999 40.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===============================
+     EVENTS LIST
+  ================================ */
+.scheduled-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===============================
+     EVENT ROW
+  ================================ */
+.event-row {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  padding: 28px 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.event-row:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ===============================
+     DATE
+  ================================ */
+.event-date {
+  width: 93px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.event-day {
+  font-family: 'Space Grotesk';
+  font-size: 32px;
+  font-weight: 400;
+  color: #f5f5f5;
+}
+
+.event-month {
+  font-family: 'Heebo';
+  font-size: 15px;
+  font-weight: 300;
+  color: #f5f5f5;
+}
+
+/* ===============================
+     EVENT INFO
+  ================================ */
+.event-info {
+  width: 268px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.event-name {
+  font-family: 'Space Grotesk';
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 19.99px;
+  color: #f5f5f5;
+}
+
+.event-artist {
+  font-family: 'Heebo';
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21.99px;
+  color: #ccc;
+}
+
+/* ===============================
+     LOCATION
+  ================================ */
+.event-location {
+  margin-left: auto;
+  display: flex;
+  gap: 16px;
+
+  font-family: 'Heebo';
+  font-size: 15px;
+  font-weight: 300;
+  color: #c2b77c;
+}

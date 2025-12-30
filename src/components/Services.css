@@ -1,0 +1,378 @@
+/* ===============================
+   SERVICES SECTION
+================================ */
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 100px 0px;
+  background: #000;
+}
+
+/* ===============================
+   TITLE
+================================ */
+.services-title {
+  font-family: 'Michroma';
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: -1px;
+
+  background: linear-gradient(91deg, #fff -14.74%, #999 40.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===============================
+   CARDS LAYOUT
+================================ */
+.services-cards {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 56px;
+}
+
+/* ===============================
+   COMMON CARD
+================================ */
+.service-card {
+  /* position: relative;
+  overflow: hidden;
+  isolation: isolate; */
+  /* position: relative; anchor for CTA
+    display: flex;
+    gap: 56px;
+    align-items: center; */
+
+  /* position: relative; 🔥 REQUIRED
+  display: flex;
+  align-items: center;
+  gap: 56px; */
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* gradient overlay */
+.service-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    197deg,
+    rgba(0, 0, 0, 0) 39.72%,
+    rgba(0, 0, 0, 0.7) 75.99%
+  );
+  z-index: 1;
+}
+
+/* ===============================
+   CORPORATE CARD
+================================ */
+.service-card--large {
+  /* width: 100%;
+  max-width: 1600px;
+  height: 536px;
+  aspect-ratio: 1000/672;
+
+  background: linear-gradient(
+      197deg,
+      rgba(0, 0, 0, 0) 39.72%,
+      rgba(0, 0, 0, 0.7) 75.99%
+    ),
+    url('/images/corporate-events.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border: 0.838px solid rgba(194, 183, 124, 0.5);
+  filter: drop-shadow(0 0 96.817px rgba(194, 183, 124, 0.4)); */
+  /* width: 2000px;
+  height: 450px; */
+  /* aspect-ratio: 1000 / 675; */
+  /* width: 1000px;
+  height: 672px; */
+  width: 1000px;
+  height: 672px;
+  flex-shrink: 0;
+
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+
+  background: linear-gradient(
+      197deg,
+      rgba(0, 0, 0, 0) 39.72%,
+      rgba(0, 0, 0, 0.7) 75.99%
+    ),
+    url('/images/corporate-events.jpg');
+
+  /* background-size: cover;
+  background-position: center; */
+  background-size: cover;
+  background-position: 30% 50%;
+  background-repeat: no-repeat;
+
+  border: 0.838px solid rgba(247, 231, 137, 0.5);
+  filter: drop-shadow(0 0 96.817px rgba(245, 231, 151, 0.4));
+  clip-path: polygon(
+    0 0,
+    /* top-left */ 100% 0,
+    /* top-right */ 100% 90%,
+    /* start cut */ 90% 100%,
+    /* diagonal cut */ 0 100% /* bottom-left */
+  );
+}
+
+/* ===============================
+   SOCIAL CARD
+================================ */
+.service-card--small {
+  /* width: 800px;
+  aspect-ratio: 1600/1067;
+
+  background: linear-gradient(
+      197deg,
+      rgba(0, 0, 0, 0) 39.72%,
+      rgba(0, 0, 0, 0.7) 75.99%
+    ),
+    url('/images/social-events.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border: 0.67px solid rgba(194, 183, 124, 0.5); */
+  /* width: 1600px;
+  height: 400px; */
+  /* aspect-ratio: 1600/1200; */
+
+  width: 800px; /* or your Figma value */
+  height: 672px; /* SAME HEIGHT as corporate */
+  flex-shrink: 0;
+
+  background: linear-gradient(
+      197deg,
+      rgba(0, 0, 0, 0) 45%,
+      rgba(0, 0, 0, 0.75) 85%
+    ),
+    url('/images/social-events.jpg');
+/* 
+  background-size: cover;
+  background-position: center; */
+  background-size: cover;
+  background-position: 30% 50%;
+  background-repeat: no-repeat;
+
+  border: 0.67px solid rgba(194, 183, 124, 0.5);
+  /* width: 800px;
+  aspect-ratio: 1000 / 672; SAME HEIGHT AS CORPORATE
+
+  background: linear-gradient(
+      197deg,
+      rgba(0, 0, 0, 0) 45%,
+      rgba(0, 0, 0, 0.75) 85%
+    ),
+    url('/images/social-events.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border: 0.67px solid rgba(194, 183, 124, 0.5); */
+}
+
+/* ===============================
+   TEXT CONTENT
+================================ */
+.service-content {
+  /* position: absolute;
+  left: 56px;
+  bottom: 56px;
+  max-width: 657px;
+  z-index: 2; */
+  /* position: absolute;
+  left: 56px;
+  bottom: 10px;
+  max-width: 520px;
+  z-index: 2; */
+  /* display: flex;
+  width: 822px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding-top: 250px; */
+  position: absolute;
+  left: 56px;
+  bottom: 56px;
+
+  display: flex;
+  width: 822px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+
+  z-index: 2;
+}
+
+.service-content h3 {
+  font-family: 'Space Grotesk';
+  align-self: stretch;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: -1px;
+  color: #fff;
+}
+
+.service-content p {
+  /* margin-top: 12.8px;
+  font-family: 'Space Grotesk';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #fff; */
+  color: #fff;
+  align-self: stretch;
+  font-family: 'Space Grotesk';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+}
+
+/* social overrides */
+.service-card--small .service-content {
+  /* max-width: 401px; */
+  /* bottom: 72px;
+  max-width: 401px; */
+
+  /* display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12.8px; */
+  position: absolute;
+  left: 48px;
+  bottom: 56px;
+
+  /* display: flex;
+  width: 401px;       
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12.8px; */
+  display: flex;
+  width: 657.6px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12.8px;
+
+  z-index: 2;
+}
+
+.service-card--small .service-content h3 {
+  font-size: 25.6px;
+  line-height: 35.2px;
+  letter-spacing: -0.4px;
+}
+
+.service-card--small .service-content p {
+  font-size: 16px;
+  line-height: 22.4px;
+}
+.services-cards-wrapper {
+  position: relative;
+}
+
+/* ===============================
+   CTA
+================================ */
+.service-cta {
+  /* position: absolute;
+
+  right: 56px;
+  top: 160px; 
+
+  padding: 16px 32px;
+  background: #ffffff;
+  border: none;
+
+  font-family: 'Space Grotesk';
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  z-index: 3; */
+  /* position: relative;
+  top: 50%;
+  right: -400px;
+  transform: translateY(-50%);
+
+  padding: 16px 32px;
+  background: #ffffff;
+  border: none;
+
+  font-family: 'Space Grotesk';
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  z-index: 5; */
+  /* position: absolute;
+
+  horizontal: center of the 56px gap
+  left: calc(1600px + 28px); half of gap
+
+  vertical: image center
+  top: 50%;
+  transform: translateY(-50%);
+
+  padding: 16px 32px;
+  background: #fff;
+  border: none;
+
+  font-family: 'Space Grotesk';
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+
+  z-index: 10;
+  cursor: pointer; */
+}
+.service-btn {
+  width: 200px;
+  height: 50px;
+  position: relative;
+  top: 50%;
+  right: -660px;
+  top: -420px;
+  transform: translateY(-50%);
+
+  padding: 16px 32px;
+  background: #ffffff;
+  border: none;
+
+  font-family: 'Space Grotesk';
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  z-index: 5;
+  clip-path: polygon(
+    0 0,
+    /* top-left */ 100% 0,
+    /* top-right */ 100% 70%,
+    /* start cut */ 90% 100%,
+    /* diagonal cut */ 0 100% /* bottom-left */
+  );
+}

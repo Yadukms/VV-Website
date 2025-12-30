@@ -1,0 +1,77 @@
+/* ===============================
+   GALLERY SECTION CONTAINER
+================================ */
+.gallery-section {
+    display: flex;
+    width: 100%;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: flex-start;
+    background: #000;
+  
+    /* KEY FIX */
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  
+  
+  /* ===============================
+     GALLERY WRAPPER
+  ================================ */
+  .gallery-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* spacing between two rows (confirm from Figma if needed) */
+  }
+  
+  /* ===============================
+     GALLERY ROW
+  ================================ */
+  .gallery-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px; /* spacing between images in a row */
+  }
+  
+  /* ===============================
+     IMAGE BASE STYLES
+  ================================ */
+  .gallery-row img {
+    height: 530px;
+    object-fit: cover;
+    display: block;
+  
+    border: 0.67px solid rgba(194, 183, 124, 0.5);
+    background: #000;
+  }
+  
+  /* ===============================
+     IMAGE SIZE VARIANTS (FIGMA LOCKED)
+  ================================ */
+  
+  /* Wide images: g1, g6 */
+  .img-wide {
+    width: 1060px;
+    max-width: 1060px;
+  }
+  
+  /* Small images: g2, g3, g4, g5 */
+  .img-small {
+    width: 530px;
+    max-width: 530px;
+  }
+  
+  /* ===============================
+     OPTIONAL: PREMIUM HOVER (SAFE)
+     Remove if not needed
+  ================================ */
+  .gallery-row img {
+    transition: transform 0.6s ease, filter 0.6s ease;
+    filter: grayscale(100%) contrast(1.05);
+  }
+  
+  .gallery-row img:hover {
+    transform: scale(1.03);
+    filter: grayscale(0%) contrast(1.1);
+  }
+  

@@ -1,0 +1,76 @@
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  /* padding-bottom: 290px; */
+}
+
+.content {
+  position: absolute;
+  left: 90px; /* adjust to match Figma */
+  top: 50%;
+  transform: translateY(-50%);
+  padding-top: 200px;
+}
+
+.title {
+  margin: 0;
+}
+
+.title span {
+  display: block;
+  color: #fff;
+  font-family: 'Michroma', sans-serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 102px;
+  text-transform: uppercase;
+}
+.subtitle {
+  margin-top: 40px; /* ⬅ increase gap */
+  margin-bottom: 0;
+  margin-top: 12px;
+  color: #fff;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  max-width: 520px; /* keeps it elegant, not stretched */
+}
+
+.cta {
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 90% 100%, 0 100%);
+  margin-top: 40px; /* ⬅ increase gap */
+  margin-bottom: 0;
+  width: 240px;
+  height: 64px;
+
+  background: rgba(244, 236, 171, 0.3);
+
+  border: none;
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+body {
+  overflow-x: hidden;
+}

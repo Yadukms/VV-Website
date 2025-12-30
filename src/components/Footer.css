@@ -1,0 +1,139 @@
+/* ===============================
+   FOOTER ROOT
+================================ */
+.footer {
+  background: #000;
+  padding: 100px 260px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+/* ===============================
+     FOOTER TOP (3 COLUMNS ROW)
+  ================================ */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* ===============================
+     FOOTER COLUMN
+  ================================ */
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-right: 15px;
+}
+
+/* ===============================
+     SECTION LABELS
+  ================================ */
+.footer-label {
+  color: #828d91;
+  font-family: 'Space Grotesk';
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+/* ===============================
+     MAIN LINKS (About / Services / etc)
+  ================================ */
+.footer-links {
+  color: #f5f5f5;
+  font-family: 'Space Grotesk';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+/* ===============================
+     SUB LINKS (Our Blog / Contact)
+  ================================ */
+.footer-sub-links {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.footer-sub-links span {
+  color: #828d91;
+  font-family: 'Space Grotesk';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+/* ===============================
+     CONTACT COLUMN
+  ================================ */
+.footer-phone {
+  color: #c2b77c;
+  font-family: 'Space Grotesk';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.footer-email {
+    margin-bottom: auto;
+  color: #828d91;
+  font-family: 'Space Grotesk';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+/* Address spacing fix */
+.footer-address {
+  margin-top: 48px; /* THIS creates the visible gap like Figma */
+
+  color: #828d91;
+  font-family: 'Space Grotesk';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+/* ===============================
+     FOLLOW US (RIGHT COLUMN)
+  ================================ */
+.footer-follow {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.footer-follow span {
+  color: #f5f5f5;
+  font-family: 'Space Grotesk';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+/* ===============================
+     FOOTER BOTTOM
+  ================================ */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 26px;
+  /* padding-left: 10px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom span {
+  color: #828d91;
+  font-family: 'Space Grotesk';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 140%;
+}

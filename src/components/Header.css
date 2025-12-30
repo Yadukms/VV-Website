@@ -1,0 +1,83 @@
+/* ===== HEADER BASE ===== */
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  color: #fff;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* ===== SHARED CONTAINER (CRITICAL) ===== */
+.topbar,
+.nav {
+  width: 100%;
+}
+
+.topbar-inner,
+.nav-inner {
+  max-width: 1320px; /* 🔥 OG GRID WIDTH */
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ===== TOP BAR ===== */
+.topbar {
+  height: 40px;
+  font-size: 13px;
+  letter-spacing: 0.8px;
+  background: rgba(0, 0, 0, 0.40);
+  padding-top: 10px;
+}
+
+.topbar-left {
+  display: flex;
+  gap: 32px;
+}
+
+.topbar-right {
+  display: flex;
+  gap: 16px;
+}
+
+.topbar-right i {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* ===== MAIN NAV ===== */
+.nav {
+  height: 44px; /* OG navbar height */
+}
+
+.nav-inner {
+  height: 100%;
+}
+
+.logo img {
+  height: 46px; /* OG logo size */
+  display: block;
+}
+
+/* ===== MENU ===== */
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  /* padding-bottom: 60px; */
+  padding-left: 100px; /* OG spacing */
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
