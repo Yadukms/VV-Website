@@ -376,3 +376,37 @@
     /* diagonal cut */ 0 100% /* bottom-left */
   );
 }
+/* swiper base */
+.services-swiper {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 40px; /* space for scrollbar */
+}
+
+/* slide sizing */
+.services-slide {
+  width: auto;
+  display: flex;
+}
+
+/* figma widths */
+.service-card--large {
+  width: 1000px;
+  flex-shrink: 0;
+}
+
+.service-card--small {
+  width: 800px;
+  flex-shrink: 0;
+}
+
+/* scrollbar styling */
+.services-swiper .swiper-scrollbar {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.services-swiper .swiper-scrollbar-drag {
+  background: #fff;
+  border-radius: 4px;
+}
