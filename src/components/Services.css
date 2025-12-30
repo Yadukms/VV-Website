@@ -160,7 +160,7 @@
       rgba(0, 0, 0, 0.75) 85%
     ),
     url('/images/social-events.jpg');
-/* 
+  /* 
   background-size: cover;
   background-position: center; */
   background-size: cover;
@@ -352,7 +352,7 @@
   height: 50px;
   position: relative;
   top: 50%;
-  right: -660px;
+  right: -830px;
   top: -420px;
   transform: translateY(-50%);
 
@@ -368,13 +368,7 @@
 
   cursor: pointer;
   z-index: 5;
-  clip-path: polygon(
-    0 0,
-    /* top-left */ 100% 0,
-    /* top-right */ 100% 70%,
-    /* start cut */ 90% 100%,
-    /* diagonal cut */ 0 100% /* bottom-left */
-  );
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 90% 100%, 0 100%);
 }
 /* swiper base */
 .services-swiper {
@@ -409,4 +403,11 @@
 .services-swiper .swiper-scrollbar-drag {
   background: #fff;
   border-radius: 4px;
+}
+.services-inner {
+  width: 100%;
+  max-width: 1200px; /* aligns with card visual width */
+  margin-left: auto; /* push content to right like Figma */
+  display: flex;
+  flex-direction: column;
 }
