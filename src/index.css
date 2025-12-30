@@ -27,3 +27,82 @@ html,
 body {
   overflow-x: hidden;
 }
+/* ============================= */
+/* RESPONSIVE BREAKPOINTS */
+/* ============================= */
+
+/* Large laptops & small desktops */
+@media (max-width: 1440px) {
+  .services {
+    padding: 80px 120px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .services {
+    padding: 64px 48px;
+  }
+
+  .services-title {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .service-card--large {
+    width: 900px;
+  }
+
+  .service-card--small {
+    width: 700px;
+  }
+}
+
+/* Tablets / small devices */
+@media (max-width: 768px) {
+  .services {
+    padding: 48px 24px;
+  }
+
+  .services-title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .service-content h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .service-content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .service-card--large,
+  .service-card--small {
+    width: 90vw; /* key */
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .services {
+    padding: 40px 16px;
+  }
+
+  .services-title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .service-content {
+    left: 24px;
+    bottom: 24px;
+  }
+
+  .service-card--large,
+  .service-card--small {
+    width: 92vw;
+  }
+}
