@@ -415,7 +415,7 @@
 }
 
 /* scrollbar styling */
-.services-swiper .swiper-scrollbar {
+/* .services-swiper .swiper-scrollbar {
   height: 4px;
   background: rgba(255, 255, 255, 0.2);
 }
@@ -423,11 +423,23 @@
 .services-swiper .swiper-scrollbar-drag {
   background: #fff;
   border-radius: 4px;
-}
+} */
 .services-inner {
   width: 100%;
   max-width: 1200px; /* aligns with card visual width */
   margin-left: auto; /* push content to right like Figma */
   display: flex;
   flex-direction: column;
+}
+.services-swiper .swiper-pagination {
+  bottom: -32px;
+}
+
+.services-swiper .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+}
+
+.services-swiper .swiper-pagination-bullet-active {
+  background: #ffffff;
 }

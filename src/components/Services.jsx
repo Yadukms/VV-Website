@@ -1,10 +1,9 @@
 import './Services.css';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Scrollbar } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 
 import 'swiper/css';
-import 'swiper/css/scrollbar';
+import 'swiper/css/pagination';
 
 export default function Services() {
   return (
@@ -12,14 +11,10 @@ export default function Services() {
       <h2 className="services-title">Our Services</h2>
 
       <Swiper
-        modules={[Scrollbar]}
-        slidesPerView="auto"
-        spaceBetween={56}
-        grabCursor={true}
-        speed={600}
-        scrollbar={{
-          draggable: true, // 🔥 THIS IS WHAT YOU WANT
-        }}
+        modules={[Pagination]}
+        slidesPerView={1}
+        spaceBetween={24}
+        pagination={{ clickable: true }}
         className="services-swiper"
       >
         <SwiperSlide className="services-slide">
@@ -39,7 +34,7 @@ export default function Services() {
 
         <SwiperSlide className="services-slide">
           <div className="service-card service-card--small">
-          <button className="service-btn">SEE DETAILS</button>
+            <button className="service-btn">SEE DETAILS</button>
             <div className="service-content">
               <h3>Social Events</h3>
               <p>
