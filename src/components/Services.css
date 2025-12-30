@@ -348,7 +348,7 @@
   cursor: pointer; */
 }
 .service-btn {
-  width: 200px;
+  /* width: 200px;
   height: 50px;
   position: relative;
   top: 50%;
@@ -368,6 +368,26 @@
 
   cursor: pointer;
   z-index: 5;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 90% 100%, 0 100%); */
+  position: absolute;
+  top: 200px;
+  right: 24px;
+
+  width: 160px;
+  height: 44px;
+
+  background: #ffffff;
+  border: none;
+
+  font-family: 'Space Grotesk';
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  z-index: 3;
+
   clip-path: polygon(0 0, 100% 0, 100% 70%, 90% 100%, 0 100%);
 }
 /* swiper base */

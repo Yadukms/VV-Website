@@ -24,7 +24,7 @@ export default function Services() {
       >
         <SwiperSlide className="services-slide">
           <div className="service-card service-card--large">
-            {/* <button className="service-btn">SEE DETAILS</button> */}
+            <button className="service-btn">SEE DETAILS</button>
             <div className="service-content">
               <h3>Corporate Events</h3>
               <p>
@@ -39,6 +39,7 @@ export default function Services() {
 
         <SwiperSlide className="services-slide">
           <div className="service-card service-card--small">
+          <button className="service-btn">SEE DETAILS</button>
             <div className="service-content">
               <h3>Social Events</h3>
               <p>
@@ -51,7 +52,7 @@ export default function Services() {
         </SwiperSlide>
       </Swiper>
 
-      <button className="service-btn">SEE DETAILS</button>
+      {/* <button className="service-btn">SEE DETAILS</button> */}
     </section>
   );
 }
