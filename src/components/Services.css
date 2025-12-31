@@ -443,3 +443,43 @@
 .services-swiper .swiper-pagination-bullet-active {
   background: #ffffff;
 }
+@media (max-width: 768px) {
+  .services {
+    padding: 48px 16px;
+    gap: 48px;
+  }
+
+  .services-title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .service-card--large,
+  .service-card--small {
+    width: 92vw;
+    height: 420px;
+  }
+
+  .service-content {
+    left: 16px;
+    bottom: 72px;
+    width: calc(100% - 32px);
+  }
+
+  .service-content h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .service-content p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .service-btn {
+    top: auto;
+    bottom: 16px;
+    right: 16px;
+  }
+}
+

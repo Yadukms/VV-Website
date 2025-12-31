@@ -111,3 +111,43 @@
   font-weight: 300;
   color: #c2b77c;
 }
+@media (max-width: 1024px) {
+  .scheduled {
+    padding: 50px 80px 80px;
+  }
+
+  .event-row {
+    gap: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .scheduled {
+    padding: 40px 24px 60px;
+    gap: 48px;
+  }
+
+  .scheduled-title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .event-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .event-date {
+    width: auto;
+  }
+
+  .event-info {
+    width: 100%;
+  }
+
+  .event-location {
+    margin-left: 0;
+    gap: 8px;
+    font-size: 14px;
+  }
+}

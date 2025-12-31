@@ -4,6 +4,7 @@ import Services from './components/Services';
 import ScheduledEvents from './components/ScheduledEvents';
 import Gallery from './components/Gallery';
 import Footer from './components/Footer';
+import './styles/responsive.css';
 
 function App() {
   return (

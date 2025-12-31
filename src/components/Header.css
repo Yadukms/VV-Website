@@ -1,4 +1,6 @@
-/* ===== HEADER BASE ===== */
+/* =========================
+   HEADER BASE
+========================= */
 .header {
   width: 100%;
   position: absolute;
@@ -9,7 +11,9 @@
   font-family: 'Space Grotesk', sans-serif;
 }
 
-/* ===== SHARED CONTAINER (CRITICAL) ===== */
+/* =========================
+   SHARED CONTAINER
+========================= */
 .topbar,
 .nav {
   width: 100%;
@@ -17,7 +21,7 @@
 
 .topbar-inner,
 .nav-inner {
-  max-width: 1320px; /* 🔥 OG GRID WIDTH */
+  max-width: 1320px;
   margin: 0 auto;
   padding: 0 24px;
 
@@ -26,12 +30,14 @@
   justify-content: space-between;
 }
 
-/* ===== TOP BAR ===== */
+/* =========================
+   TOP BAR (DESKTOP)
+========================= */
 .topbar {
   height: 40px;
   font-size: 13px;
   letter-spacing: 0.8px;
-  background: rgba(0, 0, 0, 0.40);
+  background: rgba(0, 0, 0, 0.4);
   padding-top: 10px;
 }
 
@@ -50,27 +56,26 @@
   cursor: pointer;
 }
 
-/* ===== MAIN NAV ===== */
+/* =========================
+   MAIN NAV
+========================= */
 .nav {
-  height: 44px; /* OG navbar height */
-}
-
-.nav-inner {
-  height: 100%;
+  height: 44px;
 }
 
 .logo img {
-  height: 46px; /* OG logo size */
+  height: 46px;
   display: block;
 }
 
-/* ===== MENU ===== */
+/* =========================
+   DESKTOP MENU
+========================= */
 .menu {
   display: flex;
   align-items: center;
   gap: 48px;
-  /* padding-bottom: 60px; */
-  padding-left: 100px; /* OG spacing */
+  padding-left: 100px;
 }
 
 .menu a {
@@ -80,4 +85,73 @@
   letter-spacing: 1.2px;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+/* =========================
+   HAMBURGER (MOBILE)
+========================= */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 22px;
+  height: 2px;
+  background: #fff;
+}
+
+/* =========================
+   MOBILE MENU OVERLAY
+========================= */
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.96);
+  padding: 120px 24px;
+  display: none;
+  flex-direction: column;
+  gap: 24px;
+  z-index: 999;
+}
+
+.mobile-menu a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.mobile-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 16px 0;
+}
+
+.mobile-socials {
+  display: flex;
+  gap: 16px;
+}
+
+/* =========================
+   MOBILE BREAKPOINT
+========================= */
+@media (max-width: 768px) {
+  .topbar {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobile-menu.open {
+    display: flex;
+  }
 }
