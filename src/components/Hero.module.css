@@ -76,3 +76,37 @@
 body {
   overflow-x: hidden;
 }
+/* =========================
+   HERO – MOBILE FIX
+========================= */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 100vh;
+    background-position: center;
+  }
+
+  .content {
+    position: static;
+    transform: none;
+    padding: 140px 20px 0;
+    text-align: center;
+  }
+
+  .title span {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 12px;
+    max-width: 100%;
+  }
+
+  .cta {
+    margin: 24px auto 0;
+    width: 200px;
+    height: 52px;
+  }
+}
