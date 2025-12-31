@@ -48,6 +48,7 @@ export default function Header() {
 
       {/* Mobile Menu Overlay */}
       <div className={`mobile-menu ${open ? "open" : ""}`}>
+    <button className="close-btn" onClick={() => setOpen(false)}>✕</button>
         <a href="#">CORPORATE EVENTS</a>
         <a href="#">SOCIAL EVENTS</a>
         <a href="#">WEDDINGS</a>
