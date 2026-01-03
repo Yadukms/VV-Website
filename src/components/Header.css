@@ -3,7 +3,7 @@
 ========================= */
 .header {
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
@@ -64,8 +64,12 @@
 }
 
 .logo img {
-  height: 46px;
+  /* height: 100px;
+  width: 200ox;
+  display: block; */
+    height: 69px;   /* or Figma exact */
   display: block;
+  background: none;
 }
 
 /* =========================

@@ -5,7 +5,9 @@
   display: flex;
   flex-direction: column;
   gap: 80px;
-  padding: 100px 0px;
+  /* padding: 100px 0px; */
+    padding-top: 100px;
+  padding-bottom: 100px;
   background: #000;
 }
 
@@ -18,6 +20,7 @@
   font-weight: 400;
   line-height: 56px;
   letter-spacing: -1px;
+  margin-left: 256px;
 
   background: linear-gradient(91deg, #fff -14.74%, #999 40.67%);
   -webkit-background-clip: text;
@@ -370,7 +373,7 @@
   z-index: 5;
   clip-path: polygon(0 0, 100% 0, 100% 70%, 90% 100%, 0 100%); */
   position: absolute;
-  top: 200px;
+  top: 170px;
   right: 24px;
 
   width: 160px;
@@ -394,8 +397,17 @@
 .services-swiper {
   width: 100%;
   overflow: hidden;
-  padding-bottom: 40px; /* space for scrollbar */
+  padding-bottom: 40px; 
+   padding-left: 56px;   /* ✅ Figma left margin */
+  padding-right: 0;
 }
+/* .services-swiper .swiper-wrapper {
+    padding-inline-start: 256px;
+} */
+ .services-slide:first-child {
+  margin-left: 256px; /* Figma gap */
+}
+
 
 /* slide sizing */
 .services-slide {
@@ -453,6 +465,9 @@
     font-size: 32px;
     line-height: 36px;
   }
+    .services-swiper {
+    padding-left: 16px;   /* mobile safe */
+  }
 
   .service-card--large,
   .service-card--small {
@@ -462,7 +477,7 @@
 
   .service-content {
     left: 16px;
-    bottom: 72px;
+    /* bottom: 72px; */
     width: calc(100% - 32px);
   }
 
@@ -477,8 +492,9 @@
   }
 
   .service-btn {
-    top: auto;
-    bottom: 16px;
+    /* top: auto; */
+    /* bottom: 16px; */
+     top: 200px; 
     right: 16px;
   }
 }

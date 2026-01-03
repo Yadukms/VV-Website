@@ -12,8 +12,8 @@ export default function Services() {
 
       <Swiper
         modules={[Pagination]}
-        slidesPerView={1}
-        spaceBetween={24}
+        slidesPerView="auto"
+        spaceBetween={56}
         pagination={{ clickable: true }}
         className="services-swiper"
       >

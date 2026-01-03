@@ -1,118 +1,145 @@
 /* ===============================
-   GALLERY SECTION CONTAINER
+   GALLERY SECTION
 ================================ */
+
 .gallery-section {
-    display: flex;
-    width: 100%;
-    padding-top: 100px;
-    justify-content: center;
-    align-items: flex-start;
-    background: #000;
-  
-    /* KEY FIX */
-    overflow-x: auto;
-    overflow-y: hidden;
+  width: 100%;
+  padding-top: 100px;
+  background: #000;
+  overflow: hidden; /* kills scrollbar */
+}
+
+/* ===============================
+   ROW CONTAINER
+================================ */
+
+.gallery-row {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 40px; /* Figma row gap */
+}
+
+/* ===============================
+   SCROLL TRACK
+================================ */
+
+.gallery-track {
+  display: flex;
+  gap: 40px; /* 🔒 FIGMA GAP BETWEEN IMAGES */
+  width: max-content;
+  animation: scroll-left 32s linear infinite;
+}
+
+/* second row reverse direction */
+.gallery-row.reverse .gallery-track {
+  animation: scroll-right 36s linear infinite;
+}
+
+/* ===============================
+   IMAGES (FIGMA LOCKED)
+================================ */
+
+.gallery-track img {
+  height: 530px;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+
+  border: 0.67px solid rgba(194, 183, 124, 0.5);
+  background: #000;
+
+  transition: transform 0.6s ease, filter 0.6s ease;
+  filter: grayscale(100%) contrast(1.05);
+}
+
+.gallery-track img:hover {
+  transform: scale(1.03);
+  filter: grayscale(0%) contrast(1.1);
+}
+
+/* ===============================
+   SIZE VARIANTS
+================================ */
+
+.img-wide {
+  width: 1060px;
+}
+
+.img-small {
+  width: 530px;
+}
+
+/* ===============================
+   KEYFRAMES
+================================ */
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
   }
-  
-  
-  /* ===============================
-     GALLERY WRAPPER
-  ================================ */
-  .gallery-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 40px; /* spacing between two rows (confirm from Figma if needed) */
+  to {
+    transform: translateX(-50%);
   }
-  
-  /* ===============================
-     GALLERY ROW
-  ================================ */
-  .gallery-row {
-    display: flex;
-    align-items: flex-start;
-    gap: 40px; /* spacing between images in a row */
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(-50%);
   }
-  
-  /* ===============================
-     IMAGE BASE STYLES
-  ================================ */
-  .gallery-row img {
-    height: 530px;
-    object-fit: cover;
-    display: block;
-  
-    border: 0.67px solid rgba(194, 183, 124, 0.5);
-    background: #000;
+  to {
+    transform: translateX(0);
   }
-  
-  /* ===============================
-     IMAGE SIZE VARIANTS (FIGMA LOCKED)
-  ================================ */
-  
-  /* Wide images: g1, g6 */
+}
+
+/* ===============================
+   TABLET SCALE (OPTIONAL SAFE)
+================================ */
+
+@media (max-width: 1024px) {
+  .gallery-track {
+    gap: 24px;
+  }
+
   .img-wide {
-    width: 1060px;
-    max-width: 1060px;
+    width: 720px;
+    height: 420px;
   }
-  
-  /* Small images: g2, g3, g4, g5 */
+
   .img-small {
-    width: 530px;
-    max-width: 530px;
+    width: 360px;
+    height: 420px;
   }
-  
-  /* ===============================
-     OPTIONAL: PREMIUM HOVER (SAFE)
-     Remove if not needed
-  ================================ */
-  .gallery-row img {
-    transition: transform 0.6s ease, filter 0.6s ease;
-    filter: grayscale(100%) contrast(1.05);
+}
+
+/* ===============================
+   MOBILE — STACKED (NO SCROLL)
+================================ */
+
+@media (max-width: 768px) {
+  .gallery-section {
+    padding-top: 60px;
+    overflow: visible;
   }
-  
-  .gallery-row img:hover {
-    transform: scale(1.03);
-    filter: grayscale(0%) contrast(1.1);
+
+  .gallery-row {
+    margin-bottom: 24px;
   }
-  @media (max-width: 1024px) {
-    .gallery-row {
-      gap: 24px;
-    }
-  
-    .img-wide {
-      width: 720px;
-      max-width: 720px;
-      height: 420px;
-    }
-  
-    .img-small {
-      width: 360px;
-      max-width: 360px;
-      height: 420px;
-    }
+
+  .gallery-track {
+    animation: none;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+      transform: none !important;
   }
-  @media (max-width: 768px) {
-    .gallery-section {
-      padding-top: 60px;
-      overflow-x: hidden; /* 🔥 IMPORTANT */
-    }
-  
-    .gallery-wrapper {
-      gap: 24px;
-      width: 100%;
-      padding: 0 16px;
-    }
-  
-    .gallery-row {
-      flex-direction: column;
-      gap: 16px;
-    }
-  
-    .gallery-row img {
-      width: 100% !important;
-      max-width: 100% !important;
-      height: auto;
-      aspect-ratio: 16 / 10;
-    }
+   .gallery-track img:nth-child(n + 4) {
+    display: none;
   }
-    
+
+  .gallery-track img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+}
